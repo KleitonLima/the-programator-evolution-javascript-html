@@ -1,11 +1,11 @@
 * {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
 html,
 body {
-  height: 100%;
-  width: 100%;
+  width: 100vw;
   font-family: "Matrix";
 }
 
@@ -21,6 +21,7 @@ header {
   text-align: center;
   background-image: url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg);
   background-size: cover;
+  background-position: center;
 }
 header h1 {
   padding: 1%;
@@ -36,12 +37,24 @@ span#programator {
 span#evolution {
   font-size: 300%;
 }
+@media (max-width: 850px) {
+  span#the {
+    font-size: 100%;
+  }
+  span#programator {
+    font-size: 200%;
+  }
+  span#evolution {
+    font-size: 150%;
+  }
+}
 main {
   text-align: center;
   justify-content: center;
   display: block;
   align-items: center;
   background-image: url("../img/matrix.jpg");
+  background-position: center;
   background-size: cover;
   background-color: #000000;
   padding-bottom: 2%;
